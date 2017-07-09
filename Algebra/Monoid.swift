@@ -74,7 +74,7 @@ public struct MultiplicativeMonoid <T: Multiplicative>: Monoid {
 extension Sequence where Iterator.Element: Monoid {
 
     public var reduced: Iterator.Element.Value {
-        return reduce(Iterator.Element.identity, <>).value
+        return reduce(.identity, <>).value
     }
 }
 
