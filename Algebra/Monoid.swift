@@ -8,7 +8,7 @@
 
 /// Interface defining objects with two methods:
 ///
-/// - `Unit` element
+/// - `Identity` element
 /// - `Composition` operation (inherited from `Semigroup`).
 ///
 public protocol Monoid: Semigroup {
