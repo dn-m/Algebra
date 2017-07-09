@@ -45,5 +45,3 @@ extension Sequence where Iterator.Element: Monoid {
         return reduce(.identity, <>).value
     }
 }
-
-
