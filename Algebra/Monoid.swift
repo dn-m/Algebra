@@ -6,79 +6,44 @@
 //
 //
 
-
-extension Additive {
-
-    public var sum: AdditiveMonoid<Self> {
-        return AdditiveMonoid(self)
-    }
-}
-
-
-
-extension Multiplicative {
-
-    public var product: MultiplicativeMonoid<Self> {
-        return MultiplicativeMonoid(self)
-    }
-}
-
+/// Interface defining objects with two methods:
+///
+/// - `Unit` element
+/// - `Composition` operation (inherited from `Semigroup`).
+///
 public protocol Monoid: Semigroup {
+
+    // MARK: - Associated Types
+
+    /// Type of the value wrapped by `Monoid`.
     associatedtype Value
+
+    // MARK: - Type Properties
+
+    /// Identity of `Monoid`.
+    ///
+    ///     monoid <> identity = monoid
+    ///
     static var identity: Self { get }
+
+    // MARK: - Instance Properties
+
+    /// Value wrapped by `Monoid`.
     var value: Value { get }
+
+    // MARK: - Initializers
+
+    /// Creates a `Monoid` with the given `value.
     init(_ value: Value)
-}
-
-public struct AdditiveMonoid <T: Additive>: Monoid {
-
-    public static var identity: AdditiveMonoid { return AdditiveMonoid(T.zero) }
-
-    public static func <> (lhs: AdditiveMonoid, rhs: AdditiveMonoid) -> AdditiveMonoid {
-        return AdditiveMonoid(lhs.value + rhs.value)
-    }
-
-    public let value: T
-
-    public init(_ value: T) {
-        self.value = value
-    }
-}
-
-public struct MultiplicativeMonoid <T: Multiplicative>: Monoid {
-
-    public static var identity: MultiplicativeMonoid { return MultiplicativeMonoid(T.one) }
-
-    public static func <> (lhs: MultiplicativeMonoid, rhs: MultiplicativeMonoid)
-        -> MultiplicativeMonoid
-    {
-        return MultiplicativeMonoid(lhs.value * rhs.value)
-    }
-
-    public let value: T
-
-    public init(_ value: T) {
-        self.value = value
-    }
 }
 
 extension Sequence where Iterator.Element: Monoid {
 
+    /// - Returns: The values contained herein, reduced from the `.identity` value of the `Monoid`,
+    /// composing with the `<>` operation of the `Monoid`.
     public var reduced: Iterator.Element.Value {
         return reduce(.identity, <>).value
     }
 }
 
-extension Sequence where Iterator.Element: Additive {
 
-    public var sum: Iterator.Element {
-        return map { $0.sum }.reduced
-    }
-}
-
-extension Sequence where Iterator.Element: Multiplicative {
-
-    public var product: Iterator.Element {
-        return map { $0.product }.reduced
-    }
-}

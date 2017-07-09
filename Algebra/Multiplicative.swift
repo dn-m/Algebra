@@ -8,6 +8,10 @@
 
 /// Semigroups with a one identity.
 public protocol Multiplicative: Semigroup {
+
+    /// Multplicative identity.
     static var one: Self { get }
+
+    /// Multiplicative operation.
     static func * (lhs: Self, rhs: Self) -> Self
 }

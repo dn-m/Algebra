@@ -15,6 +15,10 @@
 		075B88041F126D14009352C4 /* Additive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075B88021F126D14009352C4 /* Additive.swift */; };
 		075B88061F126D25009352C4 /* Multiplicative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075B88051F126D25009352C4 /* Multiplicative.swift */; };
 		075B88071F126D25009352C4 /* Multiplicative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075B88051F126D25009352C4 /* Multiplicative.swift */; };
+		075B88091F126D4C009352C4 /* AdditiveMonoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075B88081F126D4C009352C4 /* AdditiveMonoid.swift */; };
+		075B880A1F126D4C009352C4 /* AdditiveMonoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075B88081F126D4C009352C4 /* AdditiveMonoid.swift */; };
+		075B880C1F126D69009352C4 /* MultiplicativeMonoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075B880B1F126D69009352C4 /* MultiplicativeMonoid.swift */; };
+		075B880D1F126D69009352C4 /* MultiplicativeMonoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075B880B1F126D69009352C4 /* MultiplicativeMonoid.swift */; };
 		18873C3D596B4674148F4646 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417816001BB925EF0A621EC3 /* Cocoa.framework */; };
 		348F40B6D010EB54C4789E70 /* Algebra.h in Headers */ = {isa = PBXBuildFile; fileRef = CF33D4C0CD2702D12EFA2F91 /* Algebra.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		68A531E17A5EED65D46E06BB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417816001BB925EF0A621EC3 /* Cocoa.framework */; };
@@ -45,6 +49,8 @@
 		075B87FF1F126928009352C4 /* Monoid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Monoid.swift; path = Algebra/Monoid.swift; sourceTree = "<group>"; };
 		075B88021F126D14009352C4 /* Additive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Additive.swift; path = Algebra/Additive.swift; sourceTree = "<group>"; };
 		075B88051F126D25009352C4 /* Multiplicative.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Multiplicative.swift; path = Algebra/Multiplicative.swift; sourceTree = "<group>"; };
+		075B88081F126D4C009352C4 /* AdditiveMonoid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AdditiveMonoid.swift; path = Algebra/AdditiveMonoid.swift; sourceTree = "<group>"; };
+		075B880B1F126D69009352C4 /* MultiplicativeMonoid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MultiplicativeMonoid.swift; path = Algebra/MultiplicativeMonoid.swift; sourceTree = "<group>"; };
 		118496B860DB292872A3E006 /* Algebra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Algebra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1628B346310CE788484B4EEB /* Algebra iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Algebra iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26FAABD2D8458F5B00FD8698 /* Algebra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Algebra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,9 +119,11 @@
 			children = (
 				013FAAF234D4B045CAC1819C /* Supporting Files */,
 				075B87FC1F1266E3009352C4 /* Semigroup.swift */,
-				075B88021F126D14009352C4 /* Additive.swift */,
 				075B88051F126D25009352C4 /* Multiplicative.swift */,
+				075B88021F126D14009352C4 /* Additive.swift */,
 				075B87FF1F126928009352C4 /* Monoid.swift */,
+				075B880B1F126D69009352C4 /* MultiplicativeMonoid.swift */,
+				075B88081F126D4C009352C4 /* AdditiveMonoid.swift */,
 			);
 			name = Algebra;
 			sourceTree = "<group>";
@@ -310,7 +318,9 @@
 				075B88031F126D14009352C4 /* Additive.swift in Sources */,
 				075B87FD1F1266E3009352C4 /* Semigroup.swift in Sources */,
 				075B88001F126928009352C4 /* Monoid.swift in Sources */,
+				075B88091F126D4C009352C4 /* AdditiveMonoid.swift in Sources */,
 				075B88061F126D25009352C4 /* Multiplicative.swift in Sources */,
+				075B880C1F126D69009352C4 /* MultiplicativeMonoid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,7 +338,9 @@
 				075B88041F126D14009352C4 /* Additive.swift in Sources */,
 				075B87FE1F1266E3009352C4 /* Semigroup.swift in Sources */,
 				075B88011F126928009352C4 /* Monoid.swift in Sources */,
+				075B880A1F126D4C009352C4 /* AdditiveMonoid.swift in Sources */,
 				075B88071F126D25009352C4 /* Multiplicative.swift in Sources */,
+				075B880D1F126D69009352C4 /* MultiplicativeMonoid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

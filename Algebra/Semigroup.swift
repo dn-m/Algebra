@@ -6,8 +6,13 @@
 //
 //
 
+/// Composition operator.
 infix operator <> : AdditionPrecedence
 
+/// Interface defining objects with a single property:
+///
+/// - `Composition` operation.
+///
 public protocol Semigroup {
 
     /// - Returns: Composition of two of the same `Semigroup` type values.
