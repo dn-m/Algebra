@@ -6,11 +6,6 @@
 //
 //
 
-/// Semigroups with a zero identity.
-public protocol Additive: Semigroup {
-    static var zero: Self { get }
-    static func + (lhs: Self, rhs: Self) -> Self
-}
 
 extension Additive {
 
@@ -19,11 +14,7 @@ extension Additive {
     }
 }
 
-/// Semigroups with a one identity.
-public protocol Multiplicative: Semigroup {
-    static var one: Self { get }
-    static func * (lhs: Self, rhs: Self) -> Self
-}
+
 
 extension Multiplicative {
 
