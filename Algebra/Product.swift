@@ -1,35 +1,27 @@
 //
-//  MultiplicativeMonoid.swift
+//  Product.swift
 //  Algebra
 //
 //  Created by James Bean on 7/9/17.
 //
 //
 
-extension Multiplicative {
-
-    /// - Returns: A `MultiplicativeMonoid` view of `self`.
-    public var product: MultiplicativeMonoid<Self> {
-        return MultiplicativeMonoid(self)
-    }
-}
-
-public struct MultiplicativeMonoid <T: Multiplicative>: Monoid {
+/// Multiplicative monoidal view of a `Multiplicative`-conforming type.
+public struct Product <T: Multiplicative>: MonoidView {
 
     // MARK: - Type Properties
 
     /// - Returns: The multiplicative identity wrapped in a `MultiplicativeMonoid`.
-    public static var identity: MultiplicativeMonoid {
-        return MultiplicativeMonoid(T.one)
+    public static var identity: Product {
+        return Product(T.one)
     }
 
     // MARK: - Type Methods
 
     /// - Returns: The composition of the two given values.
-    public static func <> (lhs: MultiplicativeMonoid, rhs: MultiplicativeMonoid)
-        -> MultiplicativeMonoid
+    public static func <> (lhs: Product, rhs: Product) -> Product
     {
-        return MultiplicativeMonoid(lhs.value * rhs.value)
+        return Product(lhs.value * rhs.value)
     }
 
     // MARK: - Instance Properties
@@ -42,6 +34,14 @@ public struct MultiplicativeMonoid <T: Multiplicative>: Monoid {
     /// Creates a `MultiplicativeMonoid` with the given `value.`
     public init(_ value: T) {
         self.value = value
+    }
+}
+
+extension Multiplicative {
+
+    /// - Returns: A `Product` monoidal view of `self`.
+    public var product: Product<Self> {
+        return Product(self)
     }
 }
 

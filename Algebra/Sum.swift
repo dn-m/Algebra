@@ -1,33 +1,26 @@
 //
-//  AdditiveMonoid.swift
+//  Sum.swift
 //  Algebra
 //
 //  Created by James Bean on 7/9/17.
 //
 //
 
-extension Additive {
-
-    /// - Returns: A `AdditiveMonoid` view of `self`.
-    public var sum: AdditiveMonoid<Self> {
-        return AdditiveMonoid(self)
-    }
-}
-
-public struct AdditiveMonoid <T: Additive>: Monoid {
+/// Multiplicative monoidal view of a `Additive`-conforming type.
+public struct Sum <T: Additive>: MonoidView {
 
     // MARK: - Type Properties
 
     /// - Returns: The additive identity wrapped in a `AdditiveMonoid`.
-    public static var identity: AdditiveMonoid {
-        return AdditiveMonoid(T.zero)
+    public static var identity: Sum {
+        return Sum(T.zero)
     }
 
     // MARK: - Type Methods
 
     /// - Returns: The composition of the two given values.
-    public static func <> (lhs: AdditiveMonoid, rhs: AdditiveMonoid) -> AdditiveMonoid {
-        return AdditiveMonoid(lhs.value + rhs.value)
+    public static func <> (lhs: Sum, rhs: Sum) -> Sum {
+        return Sum(lhs.value + rhs.value)
     }
 
     // MARK: - Instance Properties
@@ -40,6 +33,14 @@ public struct AdditiveMonoid <T: Additive>: Monoid {
     /// Creates a `AdditiveMonoid` with the given `value.`
     public init(_ value: T) {
         self.value = value
+    }
+}
+
+extension Additive {
+
+    /// - Returns: A `Sum` monoidal view of `self`.
+    public var sum: Sum<Self> {
+        return Sum(self)
     }
 }
 
