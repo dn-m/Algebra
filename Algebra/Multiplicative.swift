@@ -7,7 +7,7 @@
 //
 
 /// Semigroups with a one identity.
-public protocol Multiplicative: Semigroup {
+public protocol Multiplicative: Monoid {
 
     /// Multplicative identity.
     static var one: Self { get }

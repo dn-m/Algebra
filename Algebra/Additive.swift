@@ -7,7 +7,7 @@
 //
 
 /// Semigroups with a zero identity.
-public protocol Additive: Semigroup {
+public protocol Additive: Monoid {
 
     /// Additive identity.
     static var zero: Self { get }
