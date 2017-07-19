@@ -121,24 +121,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		0724050C1F1FAD1E00E266B3 /* Additive */ = {
+		0724050C1F1FAD1E00E266B3 /* Sum */ = {
 			isa = PBXGroup;
 			children = (
 				072405031F1FAC3D00E266B3 /* Zero.swift */,
 				072405001F1FABB300E266B3 /* AdditiveSemigroup.swift */,
 				075B88021F126D14009352C4 /* Additive.swift */,
+				075B88081F126D4C009352C4 /* Sum.swift */,
 			);
-			name = Additive;
+			name = Sum;
 			sourceTree = "<group>";
 		};
-		0724050D1F1FAD2500E266B3 /* Multiplicative */ = {
+		0724050D1F1FAD2500E266B3 /* Product */ = {
 			isa = PBXGroup;
 			children = (
 				072405061F1FAC7700E266B3 /* One.swift */,
 				072405091F1FAC9900E266B3 /* MultiplicativeSemigroup.swift */,
 				075B88051F126D25009352C4 /* Multiplicative.swift */,
+				075B880B1F126D69009352C4 /* Product.swift */,
 			);
-			name = Multiplicative;
+			name = Product;
 			sourceTree = "<group>";
 		};
 		1EF2544840EF1B44B5CCC4B5 /* AlgebraTests */ = {
@@ -155,11 +157,9 @@
 				013FAAF234D4B045CAC1819C /* Supporting Files */,
 				075B87FC1F1266E3009352C4 /* Semigroup.swift */,
 				0712F4831F14D6720037BB2B /* Monoid.swift */,
-				0724050C1F1FAD1E00E266B3 /* Additive */,
-				0724050D1F1FAD2500E266B3 /* Multiplicative */,
 				075B87FF1F126928009352C4 /* MonoidView.swift */,
-				075B880B1F126D69009352C4 /* Product.swift */,
-				075B88081F126D4C009352C4 /* Sum.swift */,
+				0724050C1F1FAD1E00E266B3 /* Sum */,
+				0724050D1F1FAD2500E266B3 /* Product */,
 			);
 			name = Algebra;
 			sourceTree = "<group>";
