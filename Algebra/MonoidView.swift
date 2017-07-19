@@ -34,12 +34,3 @@ public protocol MonoidView: Monoid {
     /// Creates a `Monoid` with the given `value.
     init(_ value: Value)
 }
-
-extension Sequence where Iterator.Element: MonoidView {
-
-    /// - Returns: The values contained herein, reduced from the `.identity` value of the `Monoid`,
-    /// composing with the `<>` operation of the `Monoid`.
-    public var reduced: Iterator.Element.Value {
-        return reduce(.identity, <>).value
-    }
-}
