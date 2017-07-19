@@ -43,11 +43,3 @@ extension Additive {
         return Sum(self)
     }
 }
-
-extension Sequence where Iterator.Element: Additive {
-
-    /// - Returns: Sum of all values contained herein.
-    public var sum: Iterator.Element {
-        return map { $0.sum }.reduced
-    }
-}

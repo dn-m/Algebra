@@ -6,12 +6,5 @@
 //
 //
 
-/// Semigroups with a zero identity.
-public protocol Additive {
-
-    /// Additive identity.
-    static var zero: Self { get }
-
-    /// Additive operation.
-    static func + (lhs: Self, rhs: Self) -> Self
-}
+/// Interface for types which can be viewed as an `Sum` monoid.
+public protocol Additive: Zero, AdditiveSemigroup { }

@@ -6,12 +6,5 @@
 //
 //
 
-/// Semigroups with a one identity.
-public protocol Multiplicative {
-
-    /// Multplicative identity.
-    static var one: Self { get }
-
-    /// Multiplicative operation.
-    static func * (lhs: Self, rhs: Self) -> Self
-}
+/// Interface for types which can be viewed as an `Product` monoid.
+public protocol Multiplicative: One, MultiplicativeSemigroup { }

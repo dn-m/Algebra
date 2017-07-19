@@ -44,11 +44,3 @@ extension Multiplicative {
         return Product(self)
     }
 }
-
-extension Sequence where Iterator.Element: Multiplicative {
-
-    /// - Returns: Product of all values contained herein.
-    public var product: Iterator.Element {
-        return map { $0.product }.reduced
-    }
-}
