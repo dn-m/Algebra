@@ -19,8 +19,7 @@ public struct Product <T: Multiplicative>: MonoidView {
     // MARK: - Type Methods
 
     /// - Returns: The composition of the two given values.
-    public static func <> (lhs: Product, rhs: Product) -> Product
-    {
+    public static func <> (lhs: Product, rhs: Product) -> Product {
         return Product(lhs.value * rhs.value)
     }
 
