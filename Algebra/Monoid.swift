@@ -21,12 +21,3 @@ public protocol Monoid: Semigroup {
     ///
     static var identity: Self { get }
 }
-
-extension Sequence where Iterator.Element: Monoid {
-
-    /// - Returns: The values contained herein, reduced from the `.identity` value of the `Monoid`,
-    /// composing with the `<>` operation of the `Monoid`.
-    public var reduced: Iterator.Element {
-        return reduce(.identity, <>)
-    }
-}

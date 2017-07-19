@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		0712F4841F14D6720037BB2B /* Monoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0712F4831F14D6720037BB2B /* Monoid.swift */; };
 		0712F4851F14D6720037BB2B /* Monoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0712F4831F14D6720037BB2B /* Monoid.swift */; };
+		072405011F1FABB300E266B3 /* AdditiveSemigroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072405001F1FABB300E266B3 /* AdditiveSemigroup.swift */; };
+		072405021F1FABB300E266B3 /* AdditiveSemigroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072405001F1FABB300E266B3 /* AdditiveSemigroup.swift */; };
+		072405041F1FAC3D00E266B3 /* Zero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072405031F1FAC3D00E266B3 /* Zero.swift */; };
+		072405051F1FAC3D00E266B3 /* Zero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072405031F1FAC3D00E266B3 /* Zero.swift */; };
+		072405071F1FAC7700E266B3 /* One.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072405061F1FAC7700E266B3 /* One.swift */; };
+		072405081F1FAC7700E266B3 /* One.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072405061F1FAC7700E266B3 /* One.swift */; };
+		0724050A1F1FAC9900E266B3 /* MultiplicativeSemigroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072405091F1FAC9900E266B3 /* MultiplicativeSemigroup.swift */; };
+		0724050B1F1FAC9900E266B3 /* MultiplicativeSemigroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072405091F1FAC9900E266B3 /* MultiplicativeSemigroup.swift */; };
 		075B87FD1F1266E3009352C4 /* Semigroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075B87FC1F1266E3009352C4 /* Semigroup.swift */; };
 		075B87FE1F1266E3009352C4 /* Semigroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075B87FC1F1266E3009352C4 /* Semigroup.swift */; };
 		075B88001F126928009352C4 /* MonoidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075B87FF1F126928009352C4 /* MonoidView.swift */; };
@@ -48,6 +56,10 @@
 
 /* Begin PBXFileReference section */
 		0712F4831F14D6720037BB2B /* Monoid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Monoid.swift; path = Algebra/Monoid.swift; sourceTree = "<group>"; };
+		072405001F1FABB300E266B3 /* AdditiveSemigroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AdditiveSemigroup.swift; path = Algebra/AdditiveSemigroup.swift; sourceTree = "<group>"; };
+		072405031F1FAC3D00E266B3 /* Zero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Zero.swift; path = Algebra/Zero.swift; sourceTree = "<group>"; };
+		072405061F1FAC7700E266B3 /* One.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = One.swift; path = Algebra/One.swift; sourceTree = "<group>"; };
+		072405091F1FAC9900E266B3 /* MultiplicativeSemigroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MultiplicativeSemigroup.swift; path = Algebra/MultiplicativeSemigroup.swift; sourceTree = "<group>"; };
 		075B87FC1F1266E3009352C4 /* Semigroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Semigroup.swift; path = Algebra/Semigroup.swift; sourceTree = "<group>"; };
 		075B87FF1F126928009352C4 /* MonoidView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MonoidView.swift; path = Algebra/MonoidView.swift; sourceTree = "<group>"; };
 		075B88021F126D14009352C4 /* Additive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Additive.swift; path = Algebra/Additive.swift; sourceTree = "<group>"; };
@@ -109,6 +121,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		0724050C1F1FAD1E00E266B3 /* Additive */ = {
+			isa = PBXGroup;
+			children = (
+				072405031F1FAC3D00E266B3 /* Zero.swift */,
+				072405001F1FABB300E266B3 /* AdditiveSemigroup.swift */,
+				075B88021F126D14009352C4 /* Additive.swift */,
+			);
+			name = Additive;
+			sourceTree = "<group>";
+		};
+		0724050D1F1FAD2500E266B3 /* Multiplicative */ = {
+			isa = PBXGroup;
+			children = (
+				072405061F1FAC7700E266B3 /* One.swift */,
+				072405091F1FAC9900E266B3 /* MultiplicativeSemigroup.swift */,
+				075B88051F126D25009352C4 /* Multiplicative.swift */,
+			);
+			name = Multiplicative;
+			sourceTree = "<group>";
+		};
 		1EF2544840EF1B44B5CCC4B5 /* AlgebraTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,10 +154,10 @@
 			children = (
 				013FAAF234D4B045CAC1819C /* Supporting Files */,
 				075B87FC1F1266E3009352C4 /* Semigroup.swift */,
-				075B88051F126D25009352C4 /* Multiplicative.swift */,
-				075B88021F126D14009352C4 /* Additive.swift */,
-				075B87FF1F126928009352C4 /* MonoidView.swift */,
 				0712F4831F14D6720037BB2B /* Monoid.swift */,
+				0724050C1F1FAD1E00E266B3 /* Additive */,
+				0724050D1F1FAD2500E266B3 /* Multiplicative */,
+				075B87FF1F126928009352C4 /* MonoidView.swift */,
 				075B880B1F126D69009352C4 /* Product.swift */,
 				075B88081F126D4C009352C4 /* Sum.swift */,
 			);
@@ -321,11 +353,15 @@
 			files = (
 				075B88031F126D14009352C4 /* Additive.swift in Sources */,
 				075B87FD1F1266E3009352C4 /* Semigroup.swift in Sources */,
+				0724050A1F1FAC9900E266B3 /* MultiplicativeSemigroup.swift in Sources */,
 				0712F4841F14D6720037BB2B /* Monoid.swift in Sources */,
+				072405041F1FAC3D00E266B3 /* Zero.swift in Sources */,
 				075B88001F126928009352C4 /* MonoidView.swift in Sources */,
 				075B88091F126D4C009352C4 /* Sum.swift in Sources */,
 				075B88061F126D25009352C4 /* Multiplicative.swift in Sources */,
 				075B880C1F126D69009352C4 /* Product.swift in Sources */,
+				072405071F1FAC7700E266B3 /* One.swift in Sources */,
+				072405011F1FABB300E266B3 /* AdditiveSemigroup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,11 +378,15 @@
 			files = (
 				075B88041F126D14009352C4 /* Additive.swift in Sources */,
 				075B87FE1F1266E3009352C4 /* Semigroup.swift in Sources */,
+				0724050B1F1FAC9900E266B3 /* MultiplicativeSemigroup.swift in Sources */,
 				0712F4851F14D6720037BB2B /* Monoid.swift in Sources */,
+				072405051F1FAC3D00E266B3 /* Zero.swift in Sources */,
 				075B88011F126928009352C4 /* MonoidView.swift in Sources */,
 				075B880A1F126D4C009352C4 /* Sum.swift in Sources */,
 				075B88071F126D25009352C4 /* Multiplicative.swift in Sources */,
 				075B880D1F126D69009352C4 /* Product.swift in Sources */,
+				072405081F1FAC7700E266B3 /* One.swift in Sources */,
+				072405021F1FABB300E266B3 /* AdditiveSemigroup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
