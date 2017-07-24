@@ -1,0 +1,15 @@
+version: "Apple Swift version 4.0 (swiftlang-900.0.43 clang-900.0.22.8)"
+options: "a38a6fc501493e6690c36e3beeaceaa0"
+build_time: [1500930306, 115652000]
+inputs:
+  "/Users/BEAN/dn-m/Frameworks/Algebra/Sources/Additive.swift": [1500478024, 0]
+  "/Users/BEAN/dn-m/Frameworks/Algebra/Sources/AdditiveSemigroup.swift": [1500478024, 0]
+  "/Users/BEAN/dn-m/Frameworks/Algebra/Sources/Monoid.swift": [1500478024, 0]
+  "/Users/BEAN/dn-m/Frameworks/Algebra/Sources/MonoidView.swift": [1500478024, 0]
+  "/Users/BEAN/dn-m/Frameworks/Algebra/Sources/Multiplicative.swift": [1500478024, 0]
+  "/Users/BEAN/dn-m/Frameworks/Algebra/Sources/MultiplicativeSemigroup.swift": [1500478024, 0]
+  "/Users/BEAN/dn-m/Frameworks/Algebra/Sources/One.swift": [1500478024, 0]
+  "/Users/BEAN/dn-m/Frameworks/Algebra/Sources/Product.swift": [1500480509, 0]
+  "/Users/BEAN/dn-m/Frameworks/Algebra/Sources/Semigroup.swift": [1500476653, 0]
+  "/Users/BEAN/dn-m/Frameworks/Algebra/Sources/Sum.swift": [1500478024, 0]
+  "/Users/BEAN/dn-m/Frameworks/Algebra/Sources/Zero.swift": [1500478024, 0]
