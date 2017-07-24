@@ -1,5 +1,0 @@
-version: "Apple Swift version 4.0 (swiftlang-900.0.43 clang-900.0.22.8)"
-options: "822f3ef858b01151535db0623556e7ea"
-build_time: [1500930306, 402202000]
-inputs:
-  "/Users/BEAN/dn-m/Frameworks/Algebra/Tests/AlgebraTests/AlgebraTests.swift": [1500928276, 0]
