@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_25"
+               BlueprintIdentifier = "Algebra::Algebra"
                BuildableName = "Algebra.framework"
                BlueprintName = "Algebra"
                ReferencedContainer = "container:Algebra.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_42"
+               BlueprintIdentifier = "Algebra::AlgebraTests"
                BuildableName = "AlgebraTests.xctest"
                BlueprintName = "AlgebraTests"
                ReferencedContainer = "container:Algebra.xcodeproj">
@@ -55,7 +55,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "OBJ_25"
+            BlueprintIdentifier = "Algebra::Algebra"
             BuildableName = "Algebra.framework"
             BlueprintName = "Algebra"
             ReferencedContainer = "container:Algebra.xcodeproj">
