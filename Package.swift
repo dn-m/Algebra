@@ -5,5 +5,6 @@
 import PackageDescription
 
 let package = Package(
-    name: "Algebra"
+    name: "Algebra",
+    targets: [.target(name: "Algebra")]
 )
